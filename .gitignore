@@ -4,6 +4,7 @@ _out/
 gen/
 
 .cdsrc-private.json
+package-lock.json
 default-*.json
 *.sqlite
 
