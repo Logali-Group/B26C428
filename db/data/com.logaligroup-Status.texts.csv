@@ -1,0 +1,4 @@
+code,name,locale
+InStock,Disponible,ES
+OutOfStock,No Disponible,ES
+LowAvailability,Poca Disponibilidad,ES

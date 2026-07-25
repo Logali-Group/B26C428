@@ -1,0 +1,57 @@
+ID,rating,date,user,reviewText,product_ID
+440112ef-8715-4406-9e08-7a045c7f0d12,1.58,2022-06-18,Paula Castro,"Instrucciones poco claras.",54244d10-5450-4fa3-b157-20f57943c812
+1a28b0f3-bde0-4a1f-88b9-06ec4124e6fa,4.77,2015-05-09,Javier Medina,"Superó mis expectativas.",54244d10-5450-4fa3-b157-20f57943c812
+e595fd9b-94f0-461c-b963-6178e56f6084,4.25,2015-07-02,Miguel Acosta,"Buena calidad y precio justo.",54244d10-5450-4fa3-b157-20f57943c812
+224161f6-337c-4420-b035-9be639f45c2f,3.21,2022-11-09,Daniela Vargas,"El servicio al cliente fue útil.",54244d10-5450-4fa3-b157-20f57943c812
+0b8ed014-03d1-4296-887e-1638ea31347d,1.47,2018-08-28,Elena Morales,"Podría ser mejor, algunos detalles no me convencen.",54244d10-5450-4fa3-b157-20f57943c812
+4697a0d8-98f5-4165-b355-8aea048f09f3,1.6,2022-03-20,Diego Silva,"No cumple con lo prometido.",54244d10-5450-4fa3-b157-20f57943c812
+be439af3-1ce8-42c4-9287-cda8282bcbe2,4.32,2022-12-13,Daniela Sanchez,"Es aceptable por el precio.",54244d10-5450-4fa3-b157-20f57943c812
+40877b19-a207-4013-99fd-ef0a203f7e24,1.12,2023-07-06,Santiago Diaz,"Instrucciones poco claras.",54244d10-5450-4fa3-b157-20f57943c812
+0fdbd9aa-1786-4589-b5c7-537f0c2dcae8,1.1,2019-10-27,Valentina Romero,"El servicio al cliente fue útil.",54244d10-5450-4fa3-b157-20f57943c812
+43540c4e-ee67-4a12-8727-beca248fdbae,3.05,2023-06-28,Juan Sanchez,"Instrucciones poco claras.",54244d10-5450-4fa3-b157-20f57943c812
+400566df-0e5a-4717-b05a-a646b22ba23f,3.78,2018-10-22,Gabriel Romero,"Instrucciones poco claras.",54244d10-5450-4fa3-b157-20f57943c812
+13769cb8-162f-4eab-91f7-49df4b311f12,4.28,2025-04-16,Santiago Rodriguez,"El material se siente de baja calidad.",54244d10-5450-4fa3-b157-20f57943c812
+a70af80c-d824-48bf-b623-97f99760862c,3.04,2020-09-08,Carlos Torres,"La entrega fue rápida y sin problemas.",54244d10-5450-4fa3-b157-20f57943c812
+44fdc481-dafd-4e1c-ba41-5d9fab9f5d34,4.5,2019-10-26,Andres Medina,"Regular, esperaba más por el costo.",54244d10-5450-4fa3-b157-20f57943c812
+51ee9acd-a07c-4ad0-aae7-59950e092e50,3.13,2021-05-10,Gabriel Ortiz,"Regular, esperaba más por el costo.",54244d10-5450-4fa3-b157-20f57943c812
+b2282497-5ac9-4e44-a166-6f54458cbfe6,3.9,2017-08-25,Maria Rodriguez,"Ni bueno ni malo, simplemente funcional.",54244d10-5450-4fa3-b157-20f57943c812
+c299c2fa-daba-45a7-a40d-146e78e3c514,2.07,2022-12-25,Santiago Garcia,"Mala experiencia de compra, no lo recomiendo.",54244d10-5450-4fa3-b157-20f57943c812
+6f4aeea9-56da-4ce4-bb1c-4a4e335aa4c4,4.94,2022-11-16,Jose Gomez,"Muy satisfecho con la compra.",54244d10-5450-4fa3-b157-20f57943c812
+233afe65-19a1-46da-aeb2-835274aae437,3.53,2018-01-10,Paula Reyes,"El material se siente de baja calidad.",54244d10-5450-4fa3-b157-20f57943c812
+82a2e784-4ac8-4538-bd22-20ea15639e91,4.03,2020-07-08,Valentina Rivera,"Me encantó, funciona perfectamente.",54244d10-5450-4fa3-b157-20f57943c812
+ca32a393-8ea6-4949-b7ce-9362156a0a1e,2.48,2020-11-10,Diego Martinez,"Regular, esperaba más por el costo.",54244d10-5450-4fa3-b157-20f57943c812
+e1c9ef11-5b04-48de-87d5-538169de7a10,1.01,2018-06-02,Mateo Sanchez,"Me encantó, funciona perfectamente.",54244d10-5450-4fa3-b157-20f57943c812
+d26bbed6-91be-4436-8207-ec5eee7a7ba1,2.46,2020-04-24,Ana Romero,"El producto cumple con lo descrito.",54244d10-5450-4fa3-b157-20f57943c812
+839f9f2d-78c8-4f9c-b986-0ebd47526c9f,1.8,2021-03-30,Javier Rivera,"Superó mis expectativas.",54244d10-5450-4fa3-b157-20f57943c812
+a7d5e15e-3a97-479c-856a-122bb5e18c39,2.62,2021-05-04,Maria Acosta,"No me gustó, mala calidad.",54244d10-5450-4fa3-b157-20f57943c812
+84b43550-8623-4722-bc69-43eef0b70191,3.2,2020-10-09,Carlos Morales,"Ni bueno ni malo, simplemente funcional.",54244d10-5450-4fa3-b157-20f57943c812
+7b4ac8f2-55db-488e-b92d-9a7d7e72ac62,2.78,2024-10-06,David Medina,"El material se siente de baja calidad.",54244d10-5450-4fa3-b157-20f57943c812
+0a9c5d1b-52d0-4646-ae64-40a24df0e310,4.55,2016-02-22,Miguel Ramirez,"Instrucciones poco claras.",54244d10-5450-4fa3-b157-20f57943c812
+77f374bd-489b-44be-9366-5adf9adfe151,4.97,2021-01-08,Valentina Medina,"Funciona como se esperaba.",54244d10-5450-4fa3-b157-20f57943c812
+4cfedf0d-e90d-47ab-880c-df8834079322,5.0,2025-02-08,Carlos Sanchez,"Muy satisfecho con la compra.",54244d10-5450-4fa3-b157-20f57943c812
+48006c6c-b794-454a-9138-dec41ee4c42a,4.06,2016-02-13,Valentina Ortiz,"Podría ser mejor, algunos detalles no me convencen.",54244d10-5450-4fa3-b157-20f57943c812
+0ff18951-7f77-4bd7-bfa2-6c12d65ae9ed,4.66,2023-03-12,Juan Rivera,"El material se siente de baja calidad.",54244d10-5450-4fa3-b157-20f57943c812
+6e4f0001-c5ff-4f54-8a8e-fd221d798d41,4.15,2021-03-08,Diego Gonzalez,"Mala experiencia de compra, no lo recomiendo.",54244d10-5450-4fa3-b157-20f57943c812
+147ca253-b8b7-4fd6-8d95-60b6013a05bf,2.79,2018-06-10,Miguel Reyes,"Excelente producto, muy recomendado.",54244d10-5450-4fa3-b157-20f57943c812
+b980a174-5ab5-4c60-8916-986932a33772,3.19,2017-11-22,Maria Ortiz,"Mala experiencia de compra, no lo recomiendo.",54244d10-5450-4fa3-b157-20f57943c812
+8d1e06d5-16f9-4d41-ae96-19bff4bfc952,3.03,2020-01-28,Carlos Romero,"Es aceptable por el precio.",54244d10-5450-4fa3-b157-20f57943c812
+2f01bf03-7501-460d-8aa5-17b3d01fb5a6,2.5,2021-08-11,Valentina Silva,"Es aceptable por el precio.",54244d10-5450-4fa3-b157-20f57943c812
+91a94fb5-8e67-4c12-92f4-5445a4ccf08c,1.06,2016-10-23,Isabella Acosta,"Dejó de funcionar después de poco tiempo.",54244d10-5450-4fa3-b157-20f57943c812
+36230b5b-adf3-4c40-9ed1-20b3c45e914d,2.3,2021-02-11,Paula Torres,"Mala experiencia de compra, no lo recomiendo.",54244d10-5450-4fa3-b157-20f57943c812
+5f001692-b80a-4af0-8c5a-aa86478a7575,2.61,2020-09-13,Diego Romero,"Ni bueno ni malo, simplemente funcional.",54244d10-5450-4fa3-b157-20f57943c812
+ff1191ea-52fb-498f-ab18-8358a9c56dea,1.3,2020-01-17,Laura Garcia,"No cumple con lo prometido.",54244d10-5450-4fa3-b157-20f57943c812
+af60b727-b163-4584-b359-882d74120278,1.02,2019-01-26,Gabriel Gomez,"El servicio al cliente fue útil.",54244d10-5450-4fa3-b157-20f57943c812
+23eed703-2a56-4444-8ffd-c6aec504a84b,1.74,2017-05-12,Santiago Diaz,"Ni bueno ni malo, simplemente funcional.",54244d10-5450-4fa3-b157-20f57943c812
+80867fbb-2ad8-4c12-80aa-73cf148851f1,4.83,2019-08-07,Isabella Silva,"Ni bueno ni malo, simplemente funcional.",54244d10-5450-4fa3-b157-20f57943c812
+00a11f50-76fe-4eb4-a42e-8f3144972e80,4.97,2020-11-28,Jose Reyes,"Funciona como se esperaba.",54244d10-5450-4fa3-b157-20f57943c812
+36a039e7-fec2-46de-8ba2-2d5fdbf3f374,4.02,2018-02-05,Javier Vargas,"Buena calidad y precio justo.",54244d10-5450-4fa3-b157-20f57943c812
+6793ff06-f543-4be0-8c62-52454ea69430,2.75,2018-05-04,Mateo Sanchez,"Es aceptable por el precio.",54244d10-5450-4fa3-b157-20f57943c812
+acf53316-d509-4bbc-b5b4-f0de59a21a36,3.92,2021-10-02,Sofia Diaz,"El servicio al cliente fue útil.",54244d10-5450-4fa3-b157-20f57943c812
+626a61b7-1ac5-4652-865b-6fc5999d4bb8,1.83,2021-04-29,Jose Ramirez,"El material se siente de baja calidad.",54244d10-5450-4fa3-b157-20f57943c812
+1caa725b-1c61-4217-aa43-e582fc8d601e,3.36,2018-01-14,Laura Medina,"Funciona como se esperaba.",54244d10-5450-4fa3-b157-20f57943c812
+dc75b2d7-57a9-4dc6-979e-3641d8ec6a3b,2.52,2024-12-19,Diego Diaz,"El material se siente de baja calidad.",54244d10-5450-4fa3-b157-20f57943c812
+a3024a84-83e7-4758-a488-a8b547231d7e,1.41,2018-06-30,Juan Castro,"Dejó de funcionar después de poco tiempo.",54244d10-5450-4fa3-b157-20f57943c812
+0270602b-12b6-4977-9175-1f5e10221aa2,3.22,2018-12-17,Javier Garcia,"Superó mis expectativas.",54244d10-5450-4fa3-b157-20f57943c812
+01e71da2-ab93-44a2-98ca-744031f86ed9,1.27,2017-10-10,Javier Morales,"Es aceptable por el precio.",54244d10-5450-4fa3-b157-20f57943c812
+f0ddc11b-f639-4ec8-b244-d53213ea7b6f,4.0,2025-01-22,Juan Garcia,"El producto cumple con lo descrito.",54244d10-5450-4fa3-b157-20f57943c812
+727bbdd2-5d7f-43ba-b329-23642b6c425d,4.75,2018-08-26,Laura Perez,"No me gustó, mala calidad.",54244d10-5450-4fa3-b157-20f57943c812
