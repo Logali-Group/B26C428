@@ -9,12 +9,15 @@ using {
 type MyDecimal : Decimal(5, 3);
 
 entity Products : cuid, managed {
+    image         : LargeBinary @Core.MediaType: imageType @Core.ContentDisposition.Filename: fileName;
+    imageType     : String      @Core.IsMediaType;
+    fileName      : String;
     product       : String(8);
     productName   : String(80);
     description   : LargeString;
     category      : Association to Categories; //category and category_ID
     subCategory   : Association to SubCategories; //subCategory and subCategory_ID
-    supplier      : Association to Suppliers;
+    supplier      : Association to Suppliers; //supplier and supplier_ID
     statu         : Association to Status; //statu and statu_code
     price         : Decimal(5, 2);
     rating        : Decimal(3, 2);
