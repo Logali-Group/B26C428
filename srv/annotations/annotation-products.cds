@@ -1,4 +1,10 @@
 using {ProductsService as p} from '../products-service';
+using {ProductDetails as pd} from './annotation-productdetail';
+using {Reviews as r} from './annotation-reviews';
+using {Inventories as i} from './annotation-inventories';
+using {Sales as s} from './annotation-sales';
+
+annotate p.Products with @odata.draft.enabled;
 
 annotate p.Products with {
     image @title: 'Image' @UI.IsImage;
@@ -23,6 +29,8 @@ annotate p.Products with {
         TextArrangement : #TextOnly
      };
      supplier @Common: {
+        Text : supplier.supplierName,
+        TextArrangement : #TextOnly,
         ValueList : {
             $Type : 'Common.ValueListType',
             CollectionPath : 'Suppliers',
@@ -149,5 +157,129 @@ annotate p.Products with @(
         $Type : 'UI.DataPointType',
         Visualization: #Rating,
         Value: rating
-    }
+    },
+    UI.FieldGroup #Picture: {
+        $Type : 'UI.FieldGroupType',
+        Data:[
+            {
+                $Type : 'UI.DataField',
+                Value : image,
+                Label : ''
+            }
+        ]
+    },
+    UI.FieldGroup #SupplierAndCategory: {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : category_ID
+            },{
+                $Type : 'UI.DataField',
+                Value : subCategory_ID
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : supplier_ID
+            }
+        ]
+    },
+    UI.FieldGroup #Description: {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : description,
+                Label : ''
+            }
+        ]
+    },
+    UI.FieldGroup #Statu : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : statu_code,
+                Label: '',
+                Criticality : statu.criticality
+            }
+        ]
+    },
+    UI.DataPoint #Price : {
+        $Type : 'UI.DataPointType',
+        Visualization: #Number,
+        Value: price
+    },
+    UI.FieldGroup #Price : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataFieldForAnnotation',
+                Target : '@UI.DataPoint#Price',
+                Label : ''
+            }
+        ]
+    },
+    UI.FieldGroup #Rating : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataFieldForAnnotation',
+                Target : '@UI.DataPoint',
+                Label : ''
+            }
+        ]
+    },
+    UI.HeaderFacets: [
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : '@UI.FieldGroup#Picture'
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : '@UI.FieldGroup#SupplierAndCategory'
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : '@UI.FieldGroup#Description',
+            Label : 'Description'
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : '@UI.FieldGroup#Statu',
+            Label : 'Availability'
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : '@UI.FieldGroup#Price',
+            Label : 'Price'
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : '@UI.FieldGroup#Rating',
+            Label : 'Rating'
+        }
+    ],
+    UI.Facets:[
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : 'detail/@UI.FieldGroup#TechnicalData',
+            Label : 'Technical Data'
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : 'toReviews/@UI.LineItem',
+            Label : 'Reviews'
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : 'toInventories/@UI.LineItem',
+            Label : 'Inventories'
+        },
+        {
+            $Type : 'UI.ReferenceFacet',
+            Target : 'toSales/@UI.Chart',
+            Label : 'Sales'
+        }
+    ]
 );
