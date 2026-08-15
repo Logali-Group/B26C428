@@ -8,7 +8,7 @@ annotate i.Inventories with {
     target      @title: 'Target';
     quantity    @title: 'Quantity';
     baseUnit    @title: 'Base Unit';
-    stockNumber @title: 'Stock Number';
+    stockNumber @title: 'Stock Number' @Common.FieldControl: #ReadOnly;
 };
 
 annotate i.Inventories with {

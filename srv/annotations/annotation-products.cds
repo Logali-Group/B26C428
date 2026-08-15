@@ -1,4 +1,5 @@
 using {ProductsService as p} from '../products-service';
+using from './annnotation-suppliers';
 using {ProductDetails as pd} from './annotation-productdetail';
 using {Reviews as r} from './annotation-reviews';
 using {Inventories as i} from './annotation-inventories';
@@ -10,13 +11,13 @@ annotate p.Products with {
     image @title: 'Image' @UI.IsImage;
     product @title : 'Product';
     productName @title : 'Product Name';
-    description @title : 'Description';
+    description @title : 'Description' @UI.MultiLineText;
     category @title : 'Category';
     subCategory @title : 'Sub Category';
     supplier @title : 'Supplier';
     statu @title : 'Status';
     rating @title : 'Rating';
-    price @title : 'Price' @Measures.ISOCurrency : currency;
+    price @title : 'Price' @Measures.ISOCurrency : currency_code;
     currency @title : 'Currency' @Common.IsCurrency: true;
 };
 
@@ -89,6 +90,15 @@ annotate p.Products with @(
     //         product
     //     ],
     // },
+    Common.SideEffects: {
+        $Type : 'Common.SideEffectsType',
+        SourceProperties : [
+            supplier_ID
+        ],
+        TargetEntities : [
+            supplier
+        ],
+    },
     UI.SelectionFields: [
         product,
         category_ID,
@@ -201,7 +211,23 @@ annotate p.Products with @(
                 $Type : 'UI.DataField',
                 Value : statu_code,
                 Label: '',
-                Criticality : statu.criticality
+                Criticality : statu.criticality,
+                @Common.FieldControl : {
+                    $edmJson: {
+                        $If:[
+                            {
+                                $Eq:[
+                                    {
+                                        $Path: 'IsActiveEntity'
+                                    },
+                                    false
+                                ]
+                            },
+                            1, //ReadOnly
+                            3 //Optional
+                        ]
+                    }
+                }
             }
         ]
     },
@@ -261,6 +287,22 @@ annotate p.Products with @(
         }
     ],
     UI.Facets:[
+        {
+            $Type : 'UI.CollectionFacet',
+            Facets : [
+                {
+                    $Type : 'UI.ReferenceFacet',
+                    Target : 'supplier/@UI.FieldGroup',
+                    Label : 'General Information'
+                },
+                {
+                    $Type : 'UI.ReferenceFacet',
+                    Target : 'supplier/contact/@UI.FieldGroup',
+                    Label : 'Contact'
+                }
+            ],
+            Label: 'Supplier Information'
+        },
         {
             $Type : 'UI.ReferenceFacet',
             Target : 'detail/@UI.FieldGroup#TechnicalData',

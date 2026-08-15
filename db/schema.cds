@@ -3,7 +3,8 @@ namespace com.logaligroup;
 using {
     cuid,
     managed,
-    sap.common.CodeList
+    sap.common.CodeList,
+    sap.common.Currencies
 } from '@sap/cds/common';
 
 type MyDecimal : Decimal(5, 3);
@@ -18,16 +19,16 @@ entity Products : cuid, managed {
     category      : Association to Categories; //category and category_ID
     subCategory   : Association to SubCategories; //subCategory and subCategory_ID
     supplier      : Association to Suppliers; //supplier and supplier_ID
-    statu         : Association to Status; //statu and statu_code
-    price         : Decimal(5, 2);
+    statu         : Association to Status default 'InStock'; //statu and statu_code
+    price         : Decimal(8, 2);
     rating        : Decimal(3, 2);
-    currency      : String;
-    detail        : Association to ProductDetails; //detail and detail_ID
-    toReviews     : Association to many Reviews
+    currency      : Association to Currencies; //currency and currency_code
+    detail        : Composition of ProductDetails; //detail and detail_ID [0..1]
+    toReviews     : Composition of  many Reviews
                         on toReviews.product = $self;
-    toInventories : Association to many Inventories
+    toInventories : Composition of  many Inventories
                         on toInventories.product = $self;
-    toSales       : Association to many Sales
+    toSales       : Composition of  many Sales
                         on toSales.product = $self;
 };
 

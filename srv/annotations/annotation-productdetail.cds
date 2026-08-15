@@ -6,8 +6,8 @@ annotate ps.ProductDetails with {
     height     @title: 'Height' @Measures.Unit: unitVolume;
     depth      @title: 'Depth' @Measures.Unit: unitVolume;
     weight     @title: 'Weight' @Measures.Unit: unitWeight;
-    unitVolume @title: 'Unit Volume' @Common.IsUnit;
-    unitWeight @title: 'Unit Weight' @Common.IsUnit;
+    unitVolume @title: 'Unit Volume' @Common.IsUnit @Common.FieldControl: #ReadOnly;
+    unitWeight @title: 'Unit Weight' @Common.IsUnit @Common.FieldControl: #ReadOnly;
 };
 
 annotate ps.ProductDetails with @(
